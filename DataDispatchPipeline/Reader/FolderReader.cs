@@ -18,10 +18,8 @@ namespace RabbitMQExporter.Reader
             this.folderPath = folderPath;
             this.csvTransformer = transformer;
 
-            // Initialize the file system watcher
             fileSystemWatcher = new FileSystemWatcher(folderPath);
 
-            // Set up event handlers for file system events
             fileSystemWatcher.Created += (sender, e) =>
             {
                 string newFilePath = e.FullPath;
@@ -30,18 +28,18 @@ namespace RabbitMQExporter.Reader
                 {
                     Console.WriteLine($"New file detected: {newFilePath}");
                     ProcessFile(newFilePath);
-                    processedFiles.Add(newFilePath); // Track the processed file
+                    processedFiles.Add(newFilePath);
                 }
+
+                // Keep the application running
+                Console.WriteLine("Press any key to exit. Andrei");
+                Console.ReadKey();
             };
 
             // Enable the file system watcher
             fileSystemWatcher.EnableRaisingEvents = true;
-
-            // Keep the application running
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
-
+        
         private bool IsFileProcessed(string filePath)
         {
             return processedFiles.Contains(filePath);
@@ -49,15 +47,12 @@ namespace RabbitMQExporter.Reader
 
         private void ProcessFile(string filePath)
         {
-            // Check if the file is a CSV file
             if (Path.GetExtension(filePath).Equals(".csv", StringComparison.OrdinalIgnoreCase))
             {
                 string jsonData = csvTransformer.ConvertCsvToJson(filePath); // Use the transformer
 
                 if (jsonData != null)
                 {
-                    // Publish jsonData to RabbitMQ
-                    // Add your RabbitMQ publishing logic here
                     Console.WriteLine($"Converted and published JSON data for file: {filePath}");
                 }
             }
