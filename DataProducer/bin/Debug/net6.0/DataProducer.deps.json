@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DataProducer/1.0.0": {
+        "dependencies": {
+          "DataProducer.Reader": "1.0.0"
+        },
+        "runtime": {
+          "DataProducer.dll": {}
+        }
+      },
+      "DataProducer.Reader/1.0.0": {
+        "runtime": {
+          "DataProducer.Reader.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataProducer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataProducer.Reader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
