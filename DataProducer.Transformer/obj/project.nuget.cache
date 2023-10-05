@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5b4S5nVPkWligDxnpnmuJbWNHyRGP4pt8VfLXLq4e96m3CC0Mh2BxKsTMVxv3xqJs+ddkEtk3ncn/70jmv07jA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asaavedra\\Documents\\Software\\Microservices\\DataProducer\\DataProducer.Transformer\\DataProducer.Transformer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asaavedra\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\asaavedra\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

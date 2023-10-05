@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataProducer.Publisher\DataProducer.Publisher.csproj" />
     <ProjectReference Include="..\DataProducer.Reader\DataProducer.Reader.csproj" />
+    <ProjectReference Include="..\DataProducer.Transformer\DataProducer.Transformer.csproj" />
   </ItemGroup>
 
 </Project>

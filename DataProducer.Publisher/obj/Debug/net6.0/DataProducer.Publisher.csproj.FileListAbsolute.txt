@@ -1,0 +1,12 @@
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\bin\Debug\net6.0\DataProducer.Publisher.deps.json
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\bin\Debug\net6.0\DataProducer.Publisher.dll
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\bin\Debug\net6.0\DataProducer.Publisher.pdb
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\DataProducer.Publisher.csproj.AssemblyReference.cache
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\DataProducer.Publisher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\DataProducer.Publisher.AssemblyInfoInputs.cache
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\DataProducer.Publisher.AssemblyInfo.cs
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\DataProducer.Publisher.csproj.CoreCompileInputs.cache
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\DataProducer.Publisher.dll
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\refint\DataProducer.Publisher.dll
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\DataProducer.Publisher.pdb
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Publisher\obj\Debug\net6.0\ref\DataProducer.Publisher.dll
