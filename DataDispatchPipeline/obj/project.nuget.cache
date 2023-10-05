@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WhrbYGvN2Qe/D6h7bkFBmS9rWTQgeszo4OjZ/rpG/h4T/pOKrJ9V8gEKzxPrgTSeY4aRm/fSEIZxWigAgc/KRQ==",
+  "dgSpecHash": "umBVmlnNc50+MmHz4pL3RY8lFNev9N7YDx1qNyBBv9fs3b/w42rj+aE/uJbAq8jA2NO+fAjBh61tE7dPvHu7pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asaavedra\\Documents\\Software\\DataDispatchPipeline\\DataDispatchPipeline\\RabbitMQExporter.csproj",
+  "projectFilePath": "C:\\Users\\asaavedra\\Documents\\Software\\Microservices\\DataProducer\\DataDispatchPipeline\\RabbitMQExporter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asaavedra\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\asaavedra\\.nuget\\packages\\csvprocessor\\1.0.2.1\\csvprocessor.1.0.2.1.nupkg.sha512",

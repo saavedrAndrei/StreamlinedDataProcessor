@@ -1,36 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 using DataProducer.Reader;
+using DataProducer.Transformer;
 
 namespace DataProducer
 {
     class Program
     {
+        // Create a list to store the detected file paths
+        private static List<string> detectedFiles = new List<string>();
+
         static void Main(string[] args)
         {
-            string folderPath = @"C:\Users\asaavedra\Documents\Software\HealthCareDataset";
-
-            FolderReader reader = new FolderReader(folderPath);
-
-            // Keep the application running
-            while (true)
+            try
             {
-                // Do something
+                string folderPath = @"C:\Users\asaavedra\Documents\Software\HealthCareDataset";
 
-                // Wait for a key to be pressed
-                Console.ReadKey();
+                using (FileReader reader = new FileReader(folderPath))
+                {
+                    // Subscribe to the NewFileDetected event
+                    reader.NewFileDetected += Reader_NewFileDetected;
+
+                    // Keep the program running
+                    Console.WriteLine("Press any key to exit.");
+                    Console.ReadKey();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);  
             }
 
-            //reader.InitializeWatcher();
+            List<string> jsonFiles = new List<string>();
+            CsvToJsonTransformer transformer = new CsvToJsonTransformer();
+            foreach (var file in detectedFiles)
+            {
+                string jsonFile= transformer.ConvertCsvToJson(file);
+                jsonFiles.Add(jsonFile);
+            }
 
-            //var csvTransformer = new CsvToJsonTransformer(); // Create an instance of the transformer
-            //var folderReader = new FolderReader(folderPath, csvTransformer); // Pass it to FolderReader
 
-            //// Rest of your code remains the same...
         }
 
+        // Event handler for when a new file is detected
+        private static void Reader_NewFileDetected(object sender, string filePath)
+        {
+            // Add the detected file path to the list
+            detectedFiles.Add(filePath);
+        }
     }
 }
+

@@ -1,0 +1,12 @@
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\bin\Debug\net6.0\DataProducer.Transformer.deps.json
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\bin\Debug\net6.0\DataProducer.Transformer.dll
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\bin\Debug\net6.0\DataProducer.Transformer.pdb
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\DataProducer.Transformer.csproj.AssemblyReference.cache
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\DataProducer.Transformer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\DataProducer.Transformer.AssemblyInfoInputs.cache
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\DataProducer.Transformer.AssemblyInfo.cs
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\DataProducer.Transformer.csproj.CoreCompileInputs.cache
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\DataProducer.Transformer.dll
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\refint\DataProducer.Transformer.dll
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\DataProducer.Transformer.pdb
+C:\Users\asaavedra\Documents\Software\Microservices\DataProducer\DataProducer.Transformer\obj\Debug\net6.0\ref\DataProducer.Transformer.dll
