@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DataProducer.Reader;
 using DataProducer.Transformer;
+using DataProducer.Publisher;
 
 namespace DataProducer
 {
@@ -44,7 +45,8 @@ namespace DataProducer
                 jsonFiles.Add(jsonFile);
             }
 
-
+            DataPublisher publisher = new DataPublisher();
+            publisher.DataSender(jsonFiles);
         }
 
         // Event handler for when a new file is detected
