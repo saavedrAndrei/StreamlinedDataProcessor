@@ -36,8 +36,6 @@ namespace DataProducer.Reader
 
             if (!IsFileProcessed(newFullPath))
             {
-                // Process the newly created file here
-                Console.WriteLine($"New file detected: {e.FullPath}");
                 processedFiles.Add(newFullPath);
 
                 // Raise the event to notify the main program
