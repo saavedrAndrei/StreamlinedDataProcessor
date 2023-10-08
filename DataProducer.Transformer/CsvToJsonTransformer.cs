@@ -1,7 +1,6 @@
 ﻿using System;
 using CsvHelper.Configuration;
 using CsvHelper;
-using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -9,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Formats.Asn1;
+using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace DataProducer.Transformer
 {
