@@ -9,8 +9,7 @@ namespace DataProducer.Publisher
 {
     public class DataPublisher
     {
-
-        public void DataSender(List<string> healthDataJsonFiles)
+        public void DataSender(string jsonFile)
         {
             ConnectionFactory factory = new ConnectionFactory();
             factory.Uri = new Uri("amqp://guest:guest@localhost");
@@ -28,12 +27,9 @@ namespace DataProducer.Publisher
             channel.QueueDeclare(queueName, false, false, false, null);
             channel.QueueBind(queueName, exchangeName, routeKey, null);
 
-            foreach (var file in healthDataJsonFiles)
-            {
-                byte[] encodingFile = JsonSerializer.SerializeToUtf8Bytes(file);
-                channel.BasicPublish(exchangeName, routeKey, null, encodingFile);
-                Thread.Sleep(1000);
-            }
+            byte[] jsonBytes = Encoding.UTF8.GetBytes(jsonFile);
+            channel.BasicPublish(exchangeName, routeKey, null, jsonBytes);
+            Thread.Sleep(1000);
         }
 
     }

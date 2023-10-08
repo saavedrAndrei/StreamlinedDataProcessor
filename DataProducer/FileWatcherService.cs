@@ -36,16 +36,19 @@ namespace DataProducer
 
         private void Reader_NewFileDetected(object sender, string filePath)
         {
+            DataPublisher publisher = new DataPublisher();
+            
             // Process the detected file here
             Console.WriteLine($"New file detected: {filePath}");
 
-            List<string> jsonFiles = new List<string>();
             CsvToJsonTransformer transformer = new CsvToJsonTransformer();
             string jsonFile = transformer.ConvertCsvToJson(filePath);
-            jsonFiles.Add(jsonFile);
 
-            DataPublisher publisher = new DataPublisher();
-            publisher.DataSender(jsonFiles);
+            if (jsonFile != null)
+            {
+                publisher.DataSender(jsonFile);
+            }
+            
         }
     }
 }
